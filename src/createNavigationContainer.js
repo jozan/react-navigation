@@ -144,7 +144,7 @@ export default function createNavigationContainer(Component) {
     // Per-tick temporary storage for state.nav
 
     dispatch = inputAction => {
-      const action = NavigationActions.mapDeprecatedActionAndWarn(inputAction);
+      const action = inputAction;
       if (!this._isStateful()) {
         return false;
       }
